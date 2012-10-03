@@ -1,5 +1,5 @@
 Name:		dragonplayer
-Version: 4.9.0
+Version: 4.9.2
 Release: 1
 Epoch:		3
 Summary:	A simple video player for KDE 4
