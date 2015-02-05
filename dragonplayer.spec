@@ -1,12 +1,14 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Summary:	A simple video player for KDE 4
 Name:		dragonplayer
 Epoch:		3
-Version:	4.14.3
-Release:	2
+Version:	14.12.2
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.kde.org/applications/multimedia/dragonplayer/
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/dragon-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/dragon-%{version}.tar.xz
 
 BuildRequires:	kdelibs4-devel
 Requires:	kdebase4-runtime
@@ -21,6 +23,7 @@ to get in your way and instead empower you to simply play multimedia
 files.
 
 %files
+%{_datadir}/appdata/dragonplayer.appdata.xml
 %{_kde_bindir}/dragon
 %{_kde_appsdir}/dragonplayer
 %{_kde_appsdir}/solid/actions/dragonplayer-opendvd.desktop
