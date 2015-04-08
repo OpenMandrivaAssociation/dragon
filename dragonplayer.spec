@@ -3,7 +3,7 @@
 Summary:	A simple video player for KDE 4
 Name:		dragonplayer
 Epoch:		3
-Version:	14.12.2
+Version:	15.03.97
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
