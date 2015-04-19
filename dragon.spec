@@ -1,14 +1,14 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
-Summary:	A simple video player for KDE 4
-Name:		dragonplayer
+Summary:	A simple video player for KDE
+Name:		dragon
 Epoch:		3
 Version:	15.03.97
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.kde.org/applications/multimedia/dragonplayer/
-Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/dragon-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 
 BuildRequires:	kdelibs4-devel
 Requires:	kdebase4-runtime
