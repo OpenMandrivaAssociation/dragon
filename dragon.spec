@@ -3,15 +3,15 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	15.04.0
+Version:	15.04.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.kde.org/applications/multimedia/dragonplayer/
 Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 
-BuildRequires:	kdelibs4-devel
-Requires:	kdebase4-runtime
+BuildRequires:	kdelibs-devel
+Requires:	kde-runtime
 Conflicts:	kdemultimedia4-core < 3:4.5.71
 Conflicts:	kmix < 3:4.8.95
 
