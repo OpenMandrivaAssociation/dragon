@@ -3,8 +3,8 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	15.08.0
-Release:	2
+Version:	15.08.1
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.kde.org/applications/multimedia/dragonplayer/
@@ -18,6 +18,7 @@ BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5ConfigWidgets)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5JobWidgets)
 BuildRequires:	cmake(KF5KIO)
