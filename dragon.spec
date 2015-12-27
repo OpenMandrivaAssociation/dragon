@@ -42,7 +42,7 @@ files.
 
 %files
 %config %{_sysconfdir}/xdg/dragonplayerrc
-%{_datadir}/appdata/dragonplayer.appdata.xml
+%{_datadir}/appdata/org.kde.dragonplayer.appdata.xml
 %{_bindir}/dragon
 %{_libdir}/qt5/plugins/dragonpart.so
 %{_datadir}/applications/org.kde.dragonplayer.desktop
