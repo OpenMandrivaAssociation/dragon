@@ -3,12 +3,12 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	15.12.3
+Version:	16.04.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.kde.org/applications/multimedia/dragonplayer/
-Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 
 BuildRequires:	cmake
 BuildRequires:	ninja
