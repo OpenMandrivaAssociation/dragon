@@ -3,7 +3,7 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	16.12.2
+Version:	17.03.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -43,7 +43,6 @@ files.
 
 %files
 %config %{_sysconfdir}/xdg/dragonplayerrc
-%{_datadir}/appdata/org.kde.dragonplayer.appdata.xml
 %{_bindir}/dragon
 %{_libdir}/qt5/plugins/dragonpart.so
 %{_datadir}/applications/org.kde.dragonplayer.desktop
@@ -51,6 +50,7 @@ files.
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/kxmlgui5/dragonplayer
 %{_datadir}/solid/actions/*.desktop
+%{_datadir}/metainfo/org.kde.dragonplayer.appdata.xml
 %{_datadir}/icons/*/*/*/*
 %{_mandir}/man1/dragon.1*
 %doc %{_docdir}/HTML/en/dragonplayer
