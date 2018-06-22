@@ -3,7 +3,7 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	 17.12.2
+Version:	18.04.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -41,7 +41,7 @@ which is playing multimedia files. It's simple interface is designed not
 to get in your way and instead empower you to simply play multimedia
 files.
 
-%files -f dragon.lang,dragonplayer.lang
+%files -f dragon.lang -f dragonplayer.lang
 %config %{_sysconfdir}/xdg/dragonplayerrc
 %{_bindir}/dragon
 %{_libdir}/qt5/plugins/dragonpart.so
