@@ -33,6 +33,7 @@ BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Phonon4Qt5)
 
 %description
 Dragon Player is a multimedia player where the focus is on simplicity,
