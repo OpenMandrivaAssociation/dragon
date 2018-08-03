@@ -3,7 +3,7 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	18.07.80
+Version:	18.07.90
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
