@@ -3,8 +3,8 @@
 Summary:	A simple video player for KDE
 Name:		dragon
 Epoch:		3
-Version:	18.12.3
-Release:	2
+Version:	19.04.0
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
 Url:		http://www.kde.org/applications/multimedia/dragonplayer/
@@ -45,11 +45,10 @@ files.
 %files -f dragon.lang -f dragonplayer.lang
 %config %{_sysconfdir}/xdg/dragonplayerrc
 %{_bindir}/dragon
-%{_libdir}/qt5/plugins/dragonpart.so
+%{_libdir}/qt5/plugins/kf5/parts/dragonpart.so
 %{_datadir}/applications/org.kde.dragonplayer.desktop
 %{_datadir}/kservices5/ServiceMenus/*
 %{_datadir}/kservices5/*.desktop
-%{_datadir}/kxmlgui5/dragonplayer
 %{_datadir}/solid/actions/*.desktop
 %{_datadir}/metainfo/org.kde.dragonplayer.appdata.xml
 %{_datadir}/icons/*/*/*/*
