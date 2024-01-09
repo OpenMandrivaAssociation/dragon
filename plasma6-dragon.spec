@@ -2,7 +2,6 @@
 
 Summary:	A simple video player for KDE
 Name:		plasma6-dragon
-Epoch:		3
 Version:	24.01.85
 Release:	1
 Group:		Graphical desktop/KDE
@@ -47,11 +46,10 @@ files.
 %{_bindir}/dragon
 %{_libdir}/qt6/plugins/kf6/parts/dragonpart.so
 %{_datadir}/applications/org.kde.dragonplayer.desktop
-%{_datadir}/kservices6/ServiceMenus/*
 %{_datadir}/solid/actions/*.desktop
 %{_datadir}/metainfo/org.kde.dragonplayer.appdata.xml
 %{_datadir}/icons/*/*/*/*
-%{_mandir}/man1/dragon.1*
+%{_datadir}/kio/servicemenus/dragonplayer_play_dvd.desktop
 
 #------------------------------------------------------------------------------
 
