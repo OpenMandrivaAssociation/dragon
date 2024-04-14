@@ -5,7 +5,7 @@
 
 Summary:	A simple video player for KDE
 Name:		plasma6-dragon
-Version:	24.02.1
+Version:	24.02.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -57,6 +57,7 @@ files.
 %{_datadir}/metainfo/org.kde.dragonplayer.appdata.xml
 %{_datadir}/icons/*/*/*/*
 %{_datadir}/kio/servicemenus/dragonplayer_play_dvd.desktop
+%{_mandir}/man1/dragon.1*
 
 #------------------------------------------------------------------------------
 
