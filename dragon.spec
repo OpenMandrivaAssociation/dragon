@@ -7,7 +7,7 @@ Version:	23.08.5
 Release:	2
 Group:		Graphical desktop/KDE
 License:	GPLv2
-Url:		http://www.kde.org/applications/multimedia/dragonplayer/
+Url:		https://www.kde.org/applications/multimedia/dragonplayer/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 
 BuildRequires:	cmake
