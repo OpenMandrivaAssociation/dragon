@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	A simple video player for KDE
-Name:		plasma6-dragon
+Name:		dragon
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
