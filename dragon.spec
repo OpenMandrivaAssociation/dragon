@@ -42,6 +42,8 @@ BuildRequires:	cmake(Phonon4Qt6)
 BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
+%rename plasma6-dragon
+
 %description
 Dragon Player is a multimedia player where the focus is on simplicity,
 instead of features. Dragon Player does one thing, and only one thing,
