@@ -5,7 +5,7 @@
 
 Summary:	A simple video player for KDE
 Name:		dragon
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -16,8 +16,6 @@ Source0:	https://invent.kde.org/multimedia/dragon/-/archive/%{gitbranch}/dragon-
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/dragon-%{version}.tar.xz
 %endif
 
-BuildRequires:	cmake
-BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6Solid)
 BuildRequires:	cmake(KF6Config)
@@ -41,6 +39,9 @@ BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Phonon4Qt6)
 
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Dragon Player is a multimedia player where the focus is on simplicity,
 instead of features. Dragon Player does one thing, and only one thing,
@@ -48,7 +49,7 @@ which is playing multimedia files. It's simple interface is designed not
 to get in your way and instead empower you to simply play multimedia
 files.
 
-%files -f dragon.lang -f dragonplayer.lang
+%files -f %{name}.lang
 %config %{_sysconfdir}/xdg/dragonplayerrc
 %{_bindir}/dragon
 %{_libdir}/qt6/plugins/kf6/parts/dragonpart.so
@@ -58,19 +59,3 @@ files.
 %{_datadir}/icons/*/*/*/*
 %{_datadir}/kio/servicemenus/dragonplayer_play_dvd.desktop
 %{_mandir}/man1/dragon.1*
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n dragon-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang dragon --with-man
-%find_lang dragonplayer --with-html
