@@ -5,7 +5,7 @@
 
 Summary:	A simple video player for KDE
 Name:		dragon
-Version:	25.04.3
+Version:	25.08.0
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -52,12 +52,8 @@ to get in your way and instead empower you to simply play multimedia
 files.
 
 %files -f %{name}.lang
-%config %{_sysconfdir}/xdg/dragonplayerrc
 %{_bindir}/dragon
-%{_libdir}/qt6/plugins/kf6/parts/dragonpart.so
 %{_datadir}/applications/org.kde.dragonplayer.desktop
-%{_datadir}/solid/actions/*.desktop
 %{_datadir}/metainfo/org.kde.dragonplayer.appdata.xml
 %{_datadir}/icons/*/*/*/*
-%{_datadir}/kio/servicemenus/dragonplayer_play_dvd.desktop
-%{_mandir}/man1/dragon.1*
+%{_qtdir}/qml/org/kde/dragon
