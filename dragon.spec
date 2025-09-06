@@ -38,6 +38,7 @@ BuildRequires:	cmake(Qt6DBus)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Phonon4Qt6)
+BuildRequires:	cmake(Qt6Quick)
 
 BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
