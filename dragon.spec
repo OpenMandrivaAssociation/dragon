@@ -5,7 +5,7 @@
 
 Summary:	A simple video player for KDE
 Name:		dragon
-Version:	25.08.1
+Version:	25.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
@@ -48,9 +48,6 @@ BuildSystem:	cmake
 BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %rename plasma6-dragon
-
-%patchlist
-dragon-25.08.1-qt-6.10.patch
 
 %description
 Dragon Player is a multimedia player where the focus is on simplicity,
