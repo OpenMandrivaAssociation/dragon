@@ -5,7 +5,7 @@
 
 Summary:	A simple video player for KDE
 Name:		dragon
-Version:	25.12.1
+Version:	25.12.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2
